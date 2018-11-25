@@ -91,6 +91,7 @@ Rails.application.configure do
   end
   config.assets.compile = true
   config.action_cable.url = "wss://devincipe.herokuapp.com/cable"
+  config.action_cable.allowed_request_origins = ['*']
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
