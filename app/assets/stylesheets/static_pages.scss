@@ -1,0 +1,121 @@
+// Place all the styles related to the static_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap";
+
+.sensor_map{
+    height: 90vh;
+}
+
+.topbar_text{
+    padding-top: 1.1vh;
+    text-align: center;
+}
+
+.no-padding-bottom{
+    padding-bottom: 0px !important;
+}
+
+.padding-top-small{
+    padding-top: 10px !important;
+}
+
+.sides-background{
+    background-color: #068587;
+}
+
+.navbar-darkblue{
+    background-color: #112F41 !important;
+}
+
+.fill-width{
+    width: 100%;
+}
+
+.white{
+    color: white;
+}
+
+.logo{
+    padding-top: 10px;
+    text-align: center;
+}
+
+.topbar{
+    height: 5vh;
+    width: 100%;
+}
+
+.sensor_details{
+    height: 27vh;
+}
+
+.graph{
+    height: 20vh;
+}
+
+.paragraph{
+    padding: 5px;
+}
+
+.no-margin{
+    margin: 0px !important;
+}
+
+.no-padding{
+    padding: 0px !important;
+}
+
+.applyBorder{
+    border:2px solid black;
+}
+
+.battery{
+    text-align:center;
+
+}
+
+.chart{
+    text-align:center;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+}
+
+.chargingTime{
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+.batteryInfo{
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.green{
+    color: green;
+}
+
+.red{
+    color: red;
+}
+
+.yellow{
+    color: yellow;
+}
+
+.padding-10{
+    padding-bottom: 15px;
+}
+
+.scrolling-wrapper-side-bar{
+    overflow-y: scroll;
+  white-space: nowrap;
+//   height:150px;
+}

@@ -1,0 +1,39 @@
+<div class="row no-margin">
+    <%= render '/static_pages/topbar' %>
+</div>
+<div class="row no-margin">
+    <div id="menu_div" class="col-md-2 sides-background">
+        <div >
+            <%= render '/static_pages/menu' %>
+        </div>
+    </div>
+    <div class="row col-md-10 no-margin no-padding">
+        <%= render '/google_maps/header' %>
+        <div class="col-md-9 sensor_map no-padding"><%= render '/google_maps/map'%></div>
+        <div class="col-md-3 sides-background white scrolling-wrapper-side-bar">
+            <div class="sensor_details">
+                <%= render '/sensor/details' %>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+         $("#button1").click (function(){
+             $("#menu_div").hide("slow");
+         });
+         
+         var $mapCanvas = $('#map-canvas');
+
+        $("#button1").click (function() {
+            $mapCanvas.css({'width':'1200px','height':'800px'});
+            google.maps.event.trigger(map, 'resize');  
+        });
+    });
+</script>
+
+
+
